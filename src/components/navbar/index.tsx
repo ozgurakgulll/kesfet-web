@@ -66,19 +66,7 @@ function Navbar() {
           />
         </div>
         <div className="navbar-end hidden font-semibold md:flex">
-          <ul className="flex gap-4 px-1 items-center">
-            {showThemeSwitch && <ThemeSwitcher />}
-            {topNavbar.links.map(({ title, href }, index) => (
-              <li key={index}>
-                <a
-                  className="text-sm whitespace-nowrap link link-hover"
-                  href={href}
-                >
-                  {title}
-                </a>
-              </li>
-            ))}
-          </ul>
+
           {topNavbar.cta && (
             <a href="/app" className="ml-3 btn btn-primary btn-outline py-4">
               {topNavbar.cta}
@@ -118,13 +106,13 @@ function Navbar() {
               </a>
             </li>
           )}
-          {appStoreLink && (
-            <li className="mb-2">
-              <a href={appStoreLink} target="_blank">
-                <img className="h-12" src="/stores/app-store.svg" />
-              </a>
-            </li>
-          )}
+          {/*{appStoreLink && (*/}
+          {/*  <li className="mb-2">*/}
+          {/*    <a href={appStoreLink} target="_blank">*/}
+          {/*      <img className="h-12" src="/stores/app-store.svg" />*/}
+          {/*    </a>*/}
+          {/*  </li>*/}
+          {/*)}*/}
         </motion.ul>
       </AnimatedList>
     </motion.nav>

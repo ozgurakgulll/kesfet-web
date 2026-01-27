@@ -63,7 +63,8 @@ function Header() {
                           height: "100%",
                         }}
                         transition={{ duration: 0.6, delay: 1 }}
-                        className="w-0 h-full top-0 left-0 z-[-1] absolute inline-block bg-gradient-to-r from-primary/80 to-secondary/40 rounded-lg"
+                        className="w-0 h-full top-0 left-0 z-[-1] absolute inline-block bg-primary/10 rounded-lg blur-xl"
+
                       />
                     </span>{" "}
                     {header.headline

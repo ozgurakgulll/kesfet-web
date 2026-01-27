@@ -21,14 +21,14 @@ function Home({ config }: Props) {
       <main>
         <Navbar />
         <Header />
-        <Partners />
-        <Features />
-        <HowItWorks />
-        <Pricing />
-        <Testimonials />
-        <Faq />
-        <AppBanner />
-        <Footer />
+        {/*<Partners />*/}
+        {/*<Features />*/}
+        {/*<HowItWorks />*/}
+        {/*<Pricing />*/}
+        {/*<Testimonials />*/}
+        {/*<Faq />*/}
+        {/*<AppBanner />*/}
+        {/*<Footer />*/}
       </main>
     </ConfigContext.Provider>
   );

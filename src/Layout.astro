@@ -40,12 +40,12 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
         if (!window.matchMedia) {
           return;
         }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          return "dark";
+        if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+          return "light";
         }
       }
       const theme = localStorage.getItem("theme") ?? getPreferredColorScheme();
-      if (theme === "dark" && !forceTheme)
+      if (theme === "light" && !forceTheme)
         document.documentElement.setAttribute("data-theme", theme);
     </script>
   </head>
