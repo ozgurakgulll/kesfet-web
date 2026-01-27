@@ -1,26 +1,69 @@
 @font-face {
-  font-family: "CabinSketch";
-  src: url("/fonts/CabinSketch.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Rowdies";
-  src: url("/fonts/Rowdies-Light.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Rowdies";
-  src: url("/fonts/Rowdies-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-primary: "Source Sans 3";
+  --font-stack: var(--font-primary), ui-sans-serif, system-ui, sans-serif;
+  --base-font-size: 18px;
+}
+
+* {
+  font-family: var(--font-stack) !important;
+}
+
 html {
+  font-size: var(--base-font-size);
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-stack);
+  font-size: var(--base-font-size) !important;
 }
 .backgroundGrid {
   width: 100%;
@@ -40,4 +83,10 @@ html {
       transparent 1px
     ),
     linear-gradient(to right, rgba(200, 200, 200, 0.03) 1px, transparent 1px);
+}
+
+.dev-toolbar-root {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
