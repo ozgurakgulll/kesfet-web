@@ -7,6 +7,7 @@ const templateConfig: TemplateConfig = {
     description:
         "Keşfet ile gittiğin şehirde ilgi alanlarına göre gezilecek yerleri keşfet, favorilerini seç ve sana özel rota ve gezi planını oluştur.",
   },
+
   backgroundGrid: false,
   logo: "/logo.svg",
   theme: "corporate",
@@ -231,9 +232,45 @@ const templateConfig: TemplateConfig = {
       ],
     },
   },
+  privacyPolicy: {
+    seo: {
+      title: "Gizlilik Politikası – Keşfet",
+      description: "Keşfet uygulaması gizlilik politikası",
+    },
+    content: `
+# Gizlilik Politikası
 
-  // Privacy, Cookies ve Terms bölümlerini de istersen
-  // tamamen Türkiye KVKK uyumlu hale getirebilirim
+Keşfet, kullanıcılarının gizliliğini korumayı taahhüt eder.
+
+Toplanan veriler yalnızca kişisel gezi planı oluşturmak ve uygulama deneyimini iyileştirmek amacıyla kullanılır.
+`,
+  },
+
+  cookiesPolicy: {
+    seo: {
+      title: "Çerez Politikası – Keşfet",
+      description: "Keşfet uygulamasında kullanılan çerezler",
+    },
+    content: `
+# Çerez Politikası
+
+Keşfet, kullanıcı deneyimini geliştirmek için çerezler kullanır.
+`,
+  },
+
+  termsAndConditions: {
+    seo: {
+      title: "Kullanım Koşulları – Keşfet",
+      description: "Keşfet uygulaması kullanım koşulları",
+    },
+    content: `
+# Kullanım Koşulları
+
+Keşfet, ilgi alanlarına göre gezi planı önerileri sunan bir uygulamadır.
+
+Oluşturulan rotalar tavsiye niteliğindedir.
+`,
+  },
 };
 
 export default templateConfig;
