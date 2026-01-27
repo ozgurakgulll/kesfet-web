@@ -8,7 +8,7 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
 ---
 
 <!doctype html>
-<html lang="en" data-theme={theme}>
+<html lang="tr" data-theme={theme}>
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -16,12 +16,11 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Primary Meta Tags -->
+    <!-- SEO -->
     <title>{seo.title}</title>
-    <meta name="title" content={seo.title} />
     <meta name="description" content={seo.description} />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={seo.title} />
@@ -29,26 +28,39 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
     <meta property="og:image" content={new URL(logo, Astro.url)} />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={seo.title} />
-    <meta property="twitter:description" content={seo.description} />
-    <meta property="twitter:image" content={new URL(logo, Astro.url)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={new URL(logo, Astro.url)} />
 
+    <!-- Theme -->
     <script is:inline define:vars={{ forceTheme }}>
       function getPreferredColorScheme() {
-        if (!window.matchMedia) {
-          return;
-        }
+        if (!window.matchMedia) return;
         if (window.matchMedia("(prefers-color-scheme: light)").matches) {
           return "light";
         }
       }
-      const theme = localStorage.getItem("theme") ?? getPreferredColorScheme();
-      if (theme === "light" && !forceTheme)
+
+      const theme =
+        localStorage.getItem("theme") ?? getPreferredColorScheme();
+
+      if (theme === "light" && !forceTheme) {
         document.documentElement.setAttribute("data-theme", theme);
+      }
     </script>
+
+    <!-- 🔥 Astro Dev Toolbar TAMAMEN KAPAT -->
+    <style is:global>
+      .dev-toolbar-root {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+    </style>
   </head>
+
   <body class="relative">
     {backgroundGrid && <div class="backgroundGrid" />}
     <slot />

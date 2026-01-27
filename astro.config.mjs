@@ -5,4 +5,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "static",
   integrations: [react(), tailwind()],
+  devToolbar: {
+    enabled: false,
+  },
 });
