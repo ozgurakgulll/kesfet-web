@@ -10,7 +10,7 @@ const templateConfig: TemplateConfig = {
 
   backgroundGrid: false,
   logo: "/logo.svg",
-  theme: "corporate",
+  theme: "light",
   forceTheme: false,
   showThemeSwitch: true,
 

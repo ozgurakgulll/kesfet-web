@@ -10,8 +10,8 @@ function ThemeSwitcher() {
       if (!window.matchMedia) {
         return;
       }
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
+      if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        return "light";
       }
     }
     const theme = localStorage.getItem("theme") ?? getPreferredColorScheme();
@@ -38,12 +38,12 @@ function ThemeSwitcher() {
       <input
         type="checkbox"
         autoComplete="off"
-        checked={mode === "dark"}
+        checked={mode === "light"}
         className="toggle toggle-sm"
         onChange={(event) => {
           let mode: string | undefined;
           if (event.currentTarget.checked) {
-            mode = "dark";
+            mode = "light";
           } else {
             mode = config?.theme;
           }
