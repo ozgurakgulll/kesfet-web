@@ -1,2 +1,5 @@
-# kesfet-web
-kesfet-web
+## 🌍 Keşfet
+🚀 Akıllı gezi planlama uygulaması  
+🔗 **https://kesfet.in**
+
+
