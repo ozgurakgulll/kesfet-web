@@ -55,9 +55,18 @@ const templateConfig: TemplateConfig = {
     subtitle:
         "Keşfet, ilgi alanlarına göre sana özel yer önerileri sunar. Favorilerini seç, kaç gün kalacağını söyle, gerisini biz halledelim.",
     screenshots: [
-      "/screenshots/1.webp",
-      "/screenshots/2.webp",
-      "/screenshots/3.webp",
+      "/screenshots/1.png",
+      "/screenshots/2.png",
+      "/screenshots/3.png",
+      "/screenshots/4.png",
+      "/screenshots/5.png",
+      "/screenshots/6.png",
+      "/screenshots/7.png",
+      "/screenshots/8.png",
+      "/screenshots/9.png",
+      "/screenshots/10.png",
+      "/screenshots/11.png",
+      "/screenshots/12.png"
     ],
   },
 
@@ -199,9 +208,18 @@ const templateConfig: TemplateConfig = {
       subtitle:
           "Keşfet ile gittiğin her şehirde sana özel gezi planı ve rota oluştur.",
       screenshots: [
-        "/screenshots/1.webp",
-        "/screenshots/2.webp",
-        "/screenshots/3.webp",
+        "/screenshots/1.png",
+        "/screenshots/2.png",
+        "/screenshots/3.png",
+        "/screenshots/4.png",
+        "/screenshots/5.png",
+        "/screenshots/6.png",
+        "/screenshots/7.png",
+        "/screenshots/8.png",
+        "/screenshots/9.png",
+        "/screenshots/10.png",
+        "/screenshots/11.png",
+        "/screenshots/12.png"
       ],
       rewards: ["Gezginlerin Favorisi", "Akıllı Rota"],
       usersDescription: "1000+ gezgin Keşfet ile plan yaptı",

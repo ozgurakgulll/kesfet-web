@@ -55,11 +55,10 @@ function Navbar() {
         <div className="navbar-start">
           <a href="/" className="flex items-center">
             <img className="h-16" src={logo} alt="logo" />
-            <span className="font-bold mx-1 md:text-lg">{name}</span>
           </a>
         </div>
         <div className="navbar-end md:hidden">
-          {showThemeSwitch && <ThemeSwitcher />}
+
           <MenuToggle
             toggle={() => setIsMobileNavVisible((current) => !current)}
             isOpen={isMobileNavVisible}
