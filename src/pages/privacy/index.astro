@@ -1,0 +1,9 @@
+---
+import Layout from "Layout.astro";
+import PrivacyPolicyPage from "@modules/privacyPolicy/PrivacyPolicyPage";
+import defaultTemplateConfig from "utils/config";
+---
+
+<Layout {...defaultTemplateConfig} seo={defaultTemplateConfig.privacyPolicy?.seo}>
+  <PrivacyPolicyPage client:load config={defaultTemplateConfig} />
+</Layout>
