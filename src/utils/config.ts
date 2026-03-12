@@ -15,7 +15,7 @@ const templateConfig: TemplateConfig = {
   showThemeSwitch: true,
 
   appStoreLink: "https://apps.apple.com",
-  googlePlayLink: "https://play.google.com",
+  googlePlayLink: "https://play.google.com/store/apps/details?id=com.ozgur.kesfetapp",
 
   footer: {
     legalLinks: {

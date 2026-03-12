@@ -67,7 +67,7 @@ function Navbar() {
         <div className="navbar-end hidden font-semibold md:flex">
 
           {topNavbar.cta && (
-            <a href="/app" className="ml-3 btn btn-primary btn-outline py-4">
+            <a href="https://play.google.com/store/apps/details?id=com.ozgur.kesfetapp" className="ml-3 btn btn-primary btn-outline py-4">
               {topNavbar.cta}
             </a>
           )}
